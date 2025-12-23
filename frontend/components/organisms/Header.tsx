@@ -7,7 +7,7 @@ import { ThemeToggle } from "../atoms/buttons/ThemeToggle";
 export function Header() {
   return (
     <header className="bg-black border-b border-b-neutral-800">
-      <nav className="mx-auto max-w-7xl h-16 flex items-center justify-between px-5 sm:px-6 lg:px-12 xl:px-20">
+      <nav className="mx-auto max-w-7xl h-16 flex items-center justify-between ">
         <div>
           <Logo className="h-16 sm:h-18 md:h-20 w-auto"/>
         </div>

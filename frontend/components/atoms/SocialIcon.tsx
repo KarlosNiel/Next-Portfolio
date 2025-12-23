@@ -4,17 +4,18 @@ type SocialIconProps = {
     href: string
     icon: React.ReactNode | string
     label: string
+    className?: string
 }
 
-export function SocialIcon({ href, icon, label}: SocialIconProps){
+export function SocialIcon({ href, icon, label, className}: SocialIconProps){
     return (
         <Link 
             href={href}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopaener noreferrer"
             aria-label={label}
             title={label}
-            className="size-5"
+            className={className}
         >
             {icon}
         </Link>

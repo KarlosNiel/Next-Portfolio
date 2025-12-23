@@ -11,7 +11,7 @@ export function ThemeToggle() {
     <Button
       onClick={toggleTheme}
       aria-label="Alternar tema"
-      className="bg-transparent rounded-lg data-[pressed=true]:bg-neutral-900 hover:bg-neutral-900 transition-colors duration-200"
+      className="bg-transparent rounded-lg data-[pressed=true]:bg-neutral-900 hover:bg-neutral-900 transition-colors duration-200 text-neutral-500 hover:text-white"
     >
       {theme === "dark" ? (
         <Sun size={18} />

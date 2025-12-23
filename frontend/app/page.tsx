@@ -1,4 +1,8 @@
-import Image from "next/image";
+import { HomeLayout } from "@/components/layouts/Home";
 
 export default function Home() {
+    return (
+        <HomeLayout /> 
+    )
+
 }
