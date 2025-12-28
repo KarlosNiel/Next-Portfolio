@@ -3,6 +3,7 @@ import { PresetationSection } from "../organisms/PresetationSection";
 import { AboutSection } from "../organisms/AboutSection";
 import { ExperienceSection } from "../organisms/ExperienceSection";
 import { ProjectsSection } from "../organisms/ProjectsSection";
+import { ContactSection } from "../organisms/ContactSection";
 
 export function HomeLayout() {
     return (
@@ -12,6 +13,7 @@ export function HomeLayout() {
             <AboutSection />
             <ExperienceSection />
             <ProjectsSection />
+            <ContactSection />
         </>
     )
 }
