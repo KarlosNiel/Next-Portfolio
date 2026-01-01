@@ -2,8 +2,8 @@
   import { SocialIcon } from "../atoms/SocialIcon";
   import Image from "next/image";
   import { Button, Chip } from "@heroui/react";
-  import { ArrowRightIcon } from "../ui/arrow-right";
-import { WaypointsIcon } from "../ui/waypoints";
+  import { ArrowRightIcon } from "../ui/icons/motion/arrow-right";
+import { WaypointsIcon } from "../ui/icons/motion/waypoints";
 
   export function PresentationSection() {
     return (

@@ -5,7 +5,7 @@ import prettier from 'eslint-config-prettier/flat'
 
 const eslintConfig = defineConfig([
   {
-    files: ['**/*.{js,jsx,ts,tsx}'], 
+    files: ['**/*.{js,jsx,ts,tsx}'], git
   },
   ...nextVitals,
   ...nextTs,

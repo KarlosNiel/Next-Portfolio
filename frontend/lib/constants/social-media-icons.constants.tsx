@@ -1,7 +1,7 @@
-import { AtSignIcon } from '@/components/ui/at-sign';
-import { GithubIcon } from '@/components/ui/github';
-import { InstagramIcon } from '@/components/ui/instagram';
-import { LinkedinIcon } from '@/components/ui/linkedin';
+import { AtSignIcon } from '@/components/ui/icons/motion/at-sign';
+import { GithubIcon } from '@/components/ui/icons/motion/github';
+import { InstagramIcon } from '@/components/ui/icons/motion/instagram';
+import { LinkedinIcon } from '@/components/ui/icons/motion/linkedin';
 
 export const SOCIAL_MEDIA_ICONS = [
     {href: "https://github.com", icon: <GithubIcon  size={24}/>, label: "Github", className: "bg-black text-white dark:bg-neutral-900 p-2 rounded-sm duration-300"},

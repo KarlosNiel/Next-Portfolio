@@ -2,8 +2,8 @@
 
 import { useTheme } from "@/lib/hooks/useTheme";
 import { Button } from "@heroui/react";
-import { SunIcon } from "@/components/ui/sun";
-import { MoonIcon } from "@/components/ui/moon";
+import { SunIcon } from "@/components/ui/icons/motion/sun";
+import { MoonIcon } from "@/components/ui/icons/motion/moon";
 import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
