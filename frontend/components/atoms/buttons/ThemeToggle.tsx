@@ -1,22 +1,35 @@
 "use client";
 
-import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/lib/hooks/useTheme";
 import { Button } from "@heroui/react";
+import { SunIcon } from "@/components/ui/sun";
+import { MoonIcon } from "@/components/ui/moon";
+import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
+  const [ mounted, setMounted ] = useState(false);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+
+  }, []);
+
+  if (!mounted) {
+    return null
+  } 
 
   return (
     <Button
-      onClick={toggleTheme}
+      onPress={toggleTheme}
       aria-label="Alternar tema"
-      className="bg-transparent rounded-lg data-[pressed=true]:bg-neutral-900 hover:bg-neutral-900 transition-colors duration-200 text-neutral-500 hover:text-white"
+      className="bg-transparent rounded-lg data-[pressed=true]:bg-neutral-900 hover:bg-neutral-100 hover:text-black transition-colors duration-300 "
     >
       {theme === "dark" ? (
-        <Sun size={18} />
+        <SunIcon />
       ) : (
-        <Moon size={18} />
+        <MoonIcon />  
       )}
     </Button>
   );

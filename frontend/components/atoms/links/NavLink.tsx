@@ -20,14 +20,14 @@ export function NavLink({ href, label }: NavLinkProps) {
 
   if (isAnchor) {
     return (
-      <HeroLink underline="none" className="text-neutral-500 hover:text-white">
+      <HeroLink underline="none" className="dark:text-neutral-500 dark:hover:text-white transition-transform duration-200 hover:translate-x-1">
         <a href={href}>{label}</a>
       </HeroLink>
     );
   }
 
   return (
-    <HeroLink underline="none" className="text-neutral-500 hover:text-white">
+    <HeroLink underline="none" className="dark:text-neutral-500 dark:hover:text-white transition-transform duration-200 hover:translate-x-1">
       <Link href={href}>{label}</Link>
     </HeroLink>
   );

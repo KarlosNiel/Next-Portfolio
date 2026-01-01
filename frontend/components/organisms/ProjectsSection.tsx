@@ -4,7 +4,7 @@ import { PROJECT_CARDS } from "@/lib/constants/project-card.constants";
 export function ProjectsSection() {
 
   return (
-    <section id="projetos" className="py-20 border-t border-border">
+    <section id="projetos" className="py-20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto space-y-12">
           <div>

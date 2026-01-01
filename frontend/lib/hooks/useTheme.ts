@@ -10,13 +10,11 @@ export function useTheme() {
     return (localStorage.getItem("theme") as Theme) || "dark";
   });
 
-  // ✅ effect só sincroniza com o "mundo externo"
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  // ✅ setState só acontece em EVENTO (click)
   const toggleTheme = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };

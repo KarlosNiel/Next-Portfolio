@@ -7,6 +7,7 @@ import { useMailTo } from "@/lib/hooks/useMailTo";
 export function EmailCard() {
   const { sendMail } = useMailTo("carlosdanieltowork@gmail.com");
 
+
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 

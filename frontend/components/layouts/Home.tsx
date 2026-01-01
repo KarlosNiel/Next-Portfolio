@@ -1,18 +1,25 @@
-import { Separator } from "@heroui/react";
-import { PresetationSection } from "../organisms/PresetationSection";
+import { PresentationSection } from "../organisms/PresetationSection";
 import { AboutSection } from "../organisms/AboutSection";
 import { ExperienceSection } from "../organisms/ExperienceSection";
 import { ProjectsSection } from "../organisms/ProjectsSection";
 import { ContactSection } from "../organisms/ContactSection";
+import { SectionSeparator } from "../atoms/SectionSeparator";
 
 export function HomeLayout() {
     return (
         <>
-            <PresetationSection />
-            <Separator className="border-t border-neutral-800 my-4"/>
+            <PresentationSection />
+            <SectionSeparator />
+
             <AboutSection />
+            <SectionSeparator />
+
             <ExperienceSection />
+            <SectionSeparator />
+
             <ProjectsSection />
+            <SectionSeparator />
+
             <ContactSection />
         </>
     )

@@ -13,7 +13,7 @@ export function MobileNavigation({ navLinks }: NavigationProps) {
         aria-label="Menu"
         className="bg-transparent rounded-lg data-[pressed=true]:bg-neutral-900 transition-colors duration-200"
       >
-        <Menu className="size-5 text-white" />
+        <Menu className="size-5 text-black dark:text-white" />
       </Button>
 
       {/* Conteúdo */}
